@@ -11,7 +11,7 @@ pipeline{
 		}
 	
 		stage ("Test stage"){
-			steops {
+			steps {
 				sh echo 'this is  test stage'
 			
 			}
