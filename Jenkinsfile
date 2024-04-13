@@ -3,14 +3,14 @@ pipeline{
 	
 	
 	stages {
-		stage ("Checkot stage"){
+		stage ('Checkot stage'){
 			steps {
 				sh echo 'This is checkout stage'
 			}
 		
 		}
 	
-		stage ("Test stage"){
+		stage ('Test stage'){
 			steps {
 				sh echo 'this is  test stage'
 			
@@ -18,13 +18,13 @@ pipeline{
 
 		}
 		
-		stage ("Build stage"){
+		stage ('Build stage'){
 			steps {
 				sh echo 'this is build stage'
 			}
 		
 		}
-		stage ("Push to docker") {
+		stage ('Push to docker') {
 			steps {
 				sh 'echo deployed to docker'
 			
